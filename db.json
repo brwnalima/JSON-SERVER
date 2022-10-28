@@ -1,0 +1,15 @@
+
+{
+    "alunos": [
+        {
+            "id": 1,
+            "nome": "aluna A",
+            "nota": 8
+        },
+        {
+            "id": 2,
+            "nome": "aluno B",
+            "nota": 9
+        }
+    ]
+}
