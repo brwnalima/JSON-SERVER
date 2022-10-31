@@ -1,5 +1,5 @@
 {
-  "discplinas": [
+  "disciplinas": [
     {
       "carga horária": "300h",
       "nome": "francês",
@@ -92,6 +92,12 @@
       "duração mínima": "2 meses",
       "disciplinaId": "4",
       "turno": "tarde"
+    },
+    {
+      "duração mínima": "3 meses",
+      "disciplinaId": "5",
+      "turno": "manhã",
+      "id": 5
     }
   ]
 }
