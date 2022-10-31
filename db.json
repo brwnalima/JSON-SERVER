@@ -1,28 +1,34 @@
 {
   "discplinas": [
     {
-      "id": 1,
-      "codigo": "001",
-      "nome": "português",
-      "nível": "médio/técnico"
+      "carga horária": "300h",
+      "nome": "francês",
+      "nível": "avançado",
+      "id": 1
     },
     {
-      "id": 2,
-      "codigo": "002",
-      "nome": "matemática",
-      "nível": "médio/técnico"
+      "carga horária": "300h",
+      "nome": "inglês",
+      "nível": "empresarial",
+      "id": 2
     },
     {
-      "id": 3,
-      "codigo": "003",
-      "nome": "história",
-      "nível": "médio/técnico"
+      "carga horária": "600h",
+      "nome": "russo",
+      "nível": "avançado",
+      "id": 3
     },
     {
-      "id": 4,
-      "codigo": "004",
-      "nome": "geografia",
-      "nível": "médio/técnico"
+      "carga horária": "600h",
+      "nome": "mandarim",
+      "nível": "empresarial",
+      "id": 4
+    },
+    {
+      "carga horária": "100h",
+      "nome": "espanhol",
+      "nível": "iniciante",
+      "id": 5
     }
   ],
   "professores": [
@@ -53,6 +59,13 @@
       "cpf": "278.084.207-51",
       "email": "bryan_fogaca@edpbr.com.br",
       "telefone": "559829034051"
+    },
+    {
+      "nome": "Bernardo Calebe Almada",
+      "cpf": "429.006.579-11",
+      "email": "bernardo-almada75@wikimetal.com.br",
+      "telefone": "5548998389962",
+      "id": 5
     }
   ],
   "turmas": [
