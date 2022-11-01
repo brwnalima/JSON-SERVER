@@ -4,30 +4,34 @@
       "carga horária": "300h",
       "nome": "francês",
       "nível": "avançado",
+      "curso": "remoto",
       "id": 1
     },
     {
       "carga horária": "300h",
       "nome": "inglês",
       "nível": "empresarial",
+      "curso": "remoto",
       "id": 2
     },
     {
       "carga horária": "600h",
       "nome": "russo",
       "nível": "avançado",
+      "curso": "remoto",
       "id": 3
     },
     {
       "carga horária": "600h",
       "nome": "mandarim",
       "nível": "empresarial",
+      "curso": "híbrido",
       "id": 4
     },
     {
       "carga horária": "100h",
       "nome": "espanhol",
-      "nível": "iniciante",
+      "nível": "remoto",
       "id": 5
     }
   ],
@@ -71,30 +75,30 @@
   "turmas": [
     {
       "id": 1,
-      "duração mínima": "3 meses",
+      "nível": "C1",
       "disciplinaId": "1",
       "turno": "manhã"
     },
     {
       "id": 2,
-      "duração mínima": "1 meses",
+      "nível": "B2",
       "disciplinaId": "2",
       "turno": "tarde"
     },
     {
-      "id": 3,
-      "duração mínima": "3 meses",
+      "nível": "C1",
       "disciplinaId": "3",
-      "turno": "manhã"
+      "turno": "manhã",
+      "id": 3
     },
     {
-      "id": 4,
-      "duração mínima": "2 meses",
+      "nível": "B2",
       "disciplinaId": "4",
-      "turno": "tarde"
+      "turno": "manhã",
+      "id": 4
     },
     {
-      "duração mínima": "3 meses",
+      "nível": "A1",
       "disciplinaId": "5",
       "turno": "manhã",
       "id": 5
