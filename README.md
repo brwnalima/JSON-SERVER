@@ -2,16 +2,16 @@
  
 ### [Language Plus+](https://languageplus.onrender.com/) - Escola/Curso de Idiomas
 
-Projeto indivídual, módulo 3, do curso de Desenvolvedor Web Full Stack do Resilia Educação, em parceria com o SENAC RJ.
+Projeto individual, referente ao módulo 3, do curso de <strong>Desenvolvedor Web Full Stack</strong> do Resilia Educação, em parceria com o SENAC RJ.
 
-O trabalho abaixo tem como o intuito estabelecer uma API REST utilizando JSON SERVER e explorando os protocólos de métodos HTTP. O repositório, trata-se dos dados de uma plataforma onde o usuário poderá contratar ou se inscrever em aulas/turmas de diversos idioma. Além disso, o curso é direcionado para vários níveis - iniciante, avançado, empresarial/profissional e etc. Isso dá mais autonomia e variedade ao usuário e ele poderá escolhar qual nível e idioma deseja estudar! 
+O trabalho abaixo tem como o intuito estabelecer uma API REST utilizando JSON SERVER e explorando os protocólos de métodos HTTP. O repositório, trata-se dos dados de uma plataforma onde o usuário poderá contratar ou se inscrever em aulas/turmas de diversos idiomas. Além disso, o curso é direcionado para vários níveis - iniciante, avançado, empresarial/profissional e etc. Isso dá mais autonomia e variedade ao usuário e ele poderá escolhar qual nível e idioma deseja estudar! 
 
-O projeto foi intitulado [Language Plus+](https://languageplus.onrender.com/) - ele possui três rotas (<strong>disciplinas, professores & turmas</strong>), com no mínimo, 4 atributos cada, e o repositório foi hospedado no site [Render](https://dashboard.render.com/). 
+O projeto foi intitulado [Language Plus+](https://languageplus.onrender.com/) - ele possui três rotas (<strong>disciplinas, professores & turmas</strong>), com, no mínimo, 4 atributos cada, e o repositório foi hospedado no site [Render](https://dashboard.render.com/). 
 
 
-### ROTAS E SEUS DADOS:
+### Rotas e dados:
 
-Veja abaixo, como foi estruturada a API REST:
+Veja abaixo, como foi estruturada a API com dados mokados:
 
 ```sh
 # "disciplinas": [
