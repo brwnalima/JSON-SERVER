@@ -39,8 +39,8 @@ function Navbar() {
             <nav className='navbar'>
                 <div className="navbar-container">
                     {/* LOGO */}
-                    <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-                        Language+ <i className="fab fa-typo3" />
+                    <Link to="/" className="navbar-logo" onClick={closeMobileMenu}> {/* para quando o logo for clicado, fechar o navbar escondido*/}
+                        LANGUAGE+ <i className="fab fa-typo3" />
                     </Link>
 
                     <div className="menu-icon" onClick={handleClickIcon}>
@@ -50,7 +50,7 @@ function Navbar() {
 
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
-                            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/' className='nav-links' onClick={closeMobileMenu}> {/* para quando um componente dentro do navbar escondido for clicado, fechar o navbar*/}
                                 Home
                             </Link>
                         </li>
