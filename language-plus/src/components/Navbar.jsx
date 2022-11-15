@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './Navbar.css'
 import { Link } from 'react-router-dom'
 import { Button } from './Button'
@@ -25,6 +25,11 @@ function Navbar() {
         }
     }
 
+    // useEffect usado pra que o botão cadastro não apareça quando a page for recarregada, com a tela pequena
+    useEffect(() => {
+        showButton()
+    }, [])
+
     // evento na tela para sempre que mexer na tela (seguindo a lógica acima), mostrar o botão
     window.addEventListener('resize', showButton)
 
@@ -34,7 +39,7 @@ function Navbar() {
             <nav className='navbar'>
                 <div className="navbar-container">
                     {/* LOGO */}
-                    <Link to="/" className="navbar-logo">
+                    <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
                         Language+ <i className="fab fa-typo3" />
                     </Link>
 
