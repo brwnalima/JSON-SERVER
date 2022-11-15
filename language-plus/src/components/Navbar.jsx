@@ -1,16 +1,33 @@
 import React, { useState } from 'react'
 import './Navbar.css'
 import { Link } from 'react-router-dom'
+import { Button } from './Button'
 
 function Navbar() {
 
     // variável que, quando clicada, faz o useState mudar o estado do icon. Começa como FALSO.
     const [click, setClick] = useState(false)
 
+    const [button, setButton] = useState(true) // constante do btn da navbar
+
+
     // function que quando o setClick é usado/clicado, muda o click pra TRUE (! significa contrário do que já estava definido antes, ou seja, como estava falso, se tornou verdadeiro)
     const handleClickIcon = () => setClick(!click)
-
     const closeMobileMenu = () => setClick(false)
+
+
+    // function para saber se o tamanho da tela é maior ou igual 960 (tela grande). caso seja, não vai mostrar o botão. se não for, vai mostrar.
+    const showButton = () => {
+        if (window.innerWidth <= 960) {
+            setButton(false)
+        } else {
+            setButton(true)
+        }
+    }
+
+    // evento na tela para sempre que mexer na tela (seguindo a lógica acima), mostrar o botão
+    window.addEventListener('resize', showButton)
+
 
     return (
         <>
@@ -49,6 +66,7 @@ function Navbar() {
                         </li>
                     </ul>
 
+                    {button && <Button buttonStyle='btn--outline'>CADASTRE-SE</Button>}
                 </div>
             </nav>
         </>
