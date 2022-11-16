@@ -48,16 +48,6 @@ function Footer() {
 
                 <div className="footer-link-wrapper">
                     <div className="footer-link-items">
-                        <h2>Redes Sociais</h2>
-                        <Link to='/cursos'>Funcionamento</Link>
-                        <Link to='/sobrenos'>Nossa Equipe</Link>
-                        <Link to='/'>Patrocinadores</Link>
-                        <Link to='/'>Termos de Serviço</Link>
-                    </div>
-                </div>
-
-                <div className="footer-link-wrapper">
-                    <div className="footer-link-items">
                         <h2>Nossos cursos</h2>
                         <Link to='/cursos'>Funcionamento</Link>
                         <Link to='/sobrenos'>Nossa Equipe</Link>
