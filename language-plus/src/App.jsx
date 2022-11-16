@@ -7,6 +7,7 @@ import Home from './components/pages/Home'
 import Cursos from './components/pages/Cursos'
 import Cadastro from './components/pages/Cadastro'
 import Sobre from './components/pages/Sobre'
+import Footer from './components/footer/Footer'
 
 
 function App() {
