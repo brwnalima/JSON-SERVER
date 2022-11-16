@@ -1,6 +1,7 @@
 .cards {
   padding: 4rem;
   background: #fff;
+  overflow: hidden;
 }
 
 h1 {
