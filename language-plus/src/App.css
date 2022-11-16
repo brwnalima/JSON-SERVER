@@ -6,9 +6,9 @@
   }
   
   .home,
-  .sobre,
-  .cursos,
-  .cadastro {
+  .sobrenos,
+  .curso,
+  .cadastros {
     display: flex;
     height: 90vh;
     align-items: center;
@@ -16,29 +16,29 @@
     font-size: 3rem;
   }
   
-  .sobre {
+  .sobrenos {
     background-image: url('/images/img-2.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    color: #fff;
+    color: #180A29;
     font-size: 100px;
   }
   
-  .cursos {
+  .curso {
     background-image: url('/images/img-1.jpg');
     background-position: center;
     background-size: fill;
     background-repeat: no-repeat;
-    color: #fff;
+    color: #180A29;
     font-size: 100px;
   }
   
-  .cadastro {
+  .cadastros {
     background-image: url('/images/img-8.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    color: #fff;
+    color: #180A29;
     font-size: 100px;
   }

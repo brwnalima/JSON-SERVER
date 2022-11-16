@@ -1,8 +1,9 @@
 import React from 'react'
 import '../../App.css'
-import Cards from '../Cards'
-import VideoSection from '../VideoSection'
+import Cards from '../cards/Cards'
+import VideoSection from '../video/VideoSection'
 
+// corpo do site 
 
 function Home() {
   return (
