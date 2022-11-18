@@ -7,7 +7,7 @@ function VideoSection() {
     <div className='video-container'>
 
       <video src='/video/video-2.mp4' autoPlay loop muted />
-      <h1>LOREM IPSUM IPSUM </h1>
+      <h1>kjskfjskjfd</h1>
       <p>Ab dolores dolores est saepe quia nam?</p>
       <div className="video-btns">
         <Button className='btns'
