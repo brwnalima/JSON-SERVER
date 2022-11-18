@@ -19,7 +19,7 @@ function Footer() {
 
                 <div className="input-areas">
                     <form>
-                        <input type="email" name='email' placeholder='Seu E-mail' className="footer-input" />
+                        <input type="email" name='email' placeholder='Digite seu email' className="footer-input" />
                         <Button buttonStyle='btn--outline'>Inscreva-se</Button>
                     </form>
                 </div>
