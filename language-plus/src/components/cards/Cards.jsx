@@ -11,7 +11,7 @@ function Cards() {
 
         <div className='cards'>
             <Slide cascade damping={0.1}>
-                <h1>Lorem ipsum dolor sit amet, consectetur!</h1>
+                <h1>Os cursos de idiomas da Language Plus são focados no seu objetivo!</h1>
             </Slide>
             <Slide cascade damping={0.1}>
                 <div className='cards__container'>
@@ -20,14 +20,14 @@ function Cards() {
                             <CardItem
                                 //substituindo os props
                                 src='images/aula-remota.jpg'
-                                text='Inscreva-se já em nossos cursos on-lines e assista suas aulas onde preferir.'
-                                label='AULAS REMOTAS'
+                                text='Inscreva-se já em nossos cursos on-line e assista suas aulas em tempo real.'
+                                label='Language+ Live Class'
                                 path='/cursos'
                             />
                             <CardItem
                                 src='images/aula-presencial.jpg'
-                                text='Você pode também, estar mais próximo ao seus colegas e professores! Faça cada vez mais network durante as aulas.'
-                                label='AULAS PRESENCIAIS'
+                                text='Você pode também, estudar quando e onde quiser! Com a Language+ você vai mais longe.'
+                                label='Language+ Go'
                                 path='/cursos'
                             />
                         </ul>
