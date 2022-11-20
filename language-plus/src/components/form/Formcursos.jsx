@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import {BsTrash, BsBookmarkCheck, BsBookmarkCheckFill} from "react-icons/bs"
 import './Formcursos.css'
 
-const API = "http://localhost:3000"; //Endereço da API/json-sever//
+const API = "https://languageplus.onrender.com/"; //Endereço da API/json-sever//
 
 function Formcursos() {
 
@@ -14,7 +14,7 @@ function Formcursos() {
 
   
   useEffect(()=> { 
-    const loadData = async () =>{  //Esta função carrega os dados que serão testados pelos métodos.//
+    const loadData = async () => {  //Esta função carrega os dados que serão testados pelos métodos.//
       setLoading(true);
 
       const res = await fetch(API+"/curso")
@@ -26,9 +26,11 @@ function Formcursos() {
 
       setConfere(res);
     };
-
+    
     loadData();
   }, []);
+
+ 
 
   //Teste de envio para a API//
   const handleSubmit = async (e) => {

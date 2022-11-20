@@ -1,11 +1,13 @@
 import React from 'react'
 import '../../App.css'
 import Footer from '../footer/Footer'
+import Formcursos from '../form/Formcursos'
 
 export default function Cursos() {
     return (
         <>
-            <h1 className="curso">CURSOS</h1>
+            <Formcursos />
+
             <Footer />
         </>
     )
