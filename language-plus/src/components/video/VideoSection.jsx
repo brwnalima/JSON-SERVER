@@ -7,8 +7,8 @@ function VideoSection() {
     <div className='video-container'>
 
       <video src='/video/video-2.mp4' autoPlay loop muted />
-      <h1>LOREM IPSUM IPSUM </h1>
-      <p>Ab dolores dolores est saepe quia nam?</p>
+      <h1>VOCÊ TEM VOZ!</h1>
+      <p>Em todos os lugares, em todos os momentos da sua vida!</p>
       <div className="video-btns">
         <Button className='btns'
           buttonStyle='btn--outline'

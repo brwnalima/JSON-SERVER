@@ -19,8 +19,8 @@ function Footer() {
 
                 <div className="input-areas">
                     <form>
-                        <input type="email" name='email' placeholder='Seu E-mail' className="footer-input" />
-                        <Button buttonStyle='btn--outline'>Se inscreva</Button>
+                        <input type="email" name='email' placeholder='Digite seu email' className="footer-input" />
+                        <Button buttonStyle='btn--outline'>Inscreva-se</Button>
                     </form>
                 </div>
             </section>
@@ -28,31 +28,28 @@ function Footer() {
             <div className="footer-links">
                 <div className="footer-link-wrapper">
                     <div className="footer-link-items">
-                        <h2>Saiba Mais</h2>
-                        <Link to='/cursos'>Funcionamento</Link>
-                        <Link to='/sobrenos'>Nossa Equipe</Link>
-                        <Link to='/'>Patrocinadores</Link>
-                        <Link to='/'>Termos de Serviço</Link>
+                        <h2>Cursos</h2>
+                        <Link to='/cursos'>Curso de Espanhol</Link>
+                        <Link to='/cursos'>Curso de Francês</Link>
+                        <Link to='/cursos'>Curso de Inglês</Link>
                     </div>
                 </div>
                 
                 <div className="footer-link-wrapper">
                     <div className="footer-link-items">
-                        <h2>Contato</h2>
-                        <Link to='/cursos'>Funcionamento</Link>
-                        <Link to='/sobrenos'>Nossa Equipe</Link>
-                        <Link to='/'>Patrocinadores</Link>
-                        <Link to='/'>Termos de Serviço</Link>
+                        <h2>Institucional</h2>
+                        <Link to='/sobrenos'>Sobre Nós</Link>
+                        <Link to='/'>Parcerias</Link>
+                        <Link to='/'>Política de Privacidade</Link>
+                       
                     </div>
                 </div>
 
                 <div className="footer-link-wrapper">
                     <div className="footer-link-items">
-                        <h2>Nossos cursos</h2>
-                        <Link to='/cursos'>Funcionamento</Link>
-                        <Link to='/sobrenos'>Nossa Equipe</Link>
-                        <Link to='/'>Patrocinadores</Link>
-                        <Link to='/'>Termos de Serviço</Link>
+                        <h2>Contatos</h2>
+                        <Link to='/'>Av. Prof. Pereira Reis, 76 - Santo Cristo, Rio de Janeiro - RJ, 20220-800/POMAR</Link>
+                        <Link to='/'>central@languageplus.com.br</Link>
                     </div>
                 </div>
             </div>
