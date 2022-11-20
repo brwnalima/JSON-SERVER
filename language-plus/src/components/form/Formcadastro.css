@@ -1,10 +1,10 @@
 .Formcadastro{
     width: 40%;
     margin: 2em auto;
-    background-color: #3b0273 ;
+    background: linear-gradient(90deg, #000000 0%, #180A29 100%);
     border-radius: 5px ;
     color: #fff;
-    box-shadow: 0 0 10px #140726;
+    box-shadow: 0 0 10px #14072649;
 }
 
 .header-meusdados{

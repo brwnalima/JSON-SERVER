@@ -1,11 +1,12 @@
 import React from 'react'
 import '../../App.css'
 import Footer from '../footer/Footer'
+import Formcadastro from '../form/Formcadastro'
 
 export default function Cadastro() {
   return (
     <>
-      <h1 className="cadastros">INSCRIÇÃO</h1>
+      <Formcadastro />
       <Footer />
     </>
   )
