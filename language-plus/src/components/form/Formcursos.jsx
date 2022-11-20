@@ -87,7 +87,7 @@ function Formcursos() {
       <h1>Language +</h1>
      </div>
      <div className='form-meucurso'>
-      <h2>Crie sua conta</h2>
+      <h2>Meus cursos</h2>
       <form onSubmit={handleSubmit}>
         <div className='form-control'>
           <label htmlFor='curso'>O que você vai estudar?</label>
