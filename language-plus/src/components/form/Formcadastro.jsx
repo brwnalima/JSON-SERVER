@@ -127,7 +127,6 @@ function Formcadastro() {
             <input type="password" name="senha" placeholder="Ex.99999999" onChange={(e) => setSenha(e.target.value)} value={senha || ""} required />
           </div>
 
-        {/*  <Button buttonStyle={'btn--outline'}>Começar</Button> */}
           <input type="submit" value="Começar" />
         </form>
 

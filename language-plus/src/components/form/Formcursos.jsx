@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import { BsTrash, BsBookmarkCheck, BsBookmarkCheckFill } from "react-icons/bs"
-import { Button } from '../button/Button';
 import './Formcursos.css'
 
 const API = "https://language-plus.onrender.com/"; //Endereço da API/json-sever//
@@ -18,7 +17,7 @@ function Formcursos() {
     const loadData = async () => {  //Esta função carrega os dados que serão testados pelos métodos.//
       setLoading(true);
 
-      const res = await fetch(API + "/curso")
+      const res = await fetch(API + "/disciplinas")
         .then((res) => res.json())   //Espera uma resposta e transforma em json.//
         .then((data) => data)       //Retorna os dados//
         .catch((err) => console.log(err));
@@ -40,12 +39,12 @@ function Formcursos() {
 
     const confere = {
       id: Math.random(),
-      curso,
+      disciplina,
       modalidade,
       done: false,
     };
 
-    await fetch(API + "/curso", {
+    await fetch(API + "/disciplinas", {
       method: "POST",
       body: JSON.stringify(confere),
       headers: {
@@ -63,7 +62,7 @@ function Formcursos() {
 
   const handleDelete = async (id) => {
 
-    await fetch(API + "/curso/" + id, {
+    await fetch(API + "/disciplinas/" + id, {
       method: "DELETE",
     });
 
@@ -73,7 +72,7 @@ function Formcursos() {
   const handleEdit = async (confere) => {
     confere.done = !confere.done;
 
-    const data = await fetch(API + "/curso/" + confere.id, {
+    const data = await fetch(API + "/disciplinas/" + confere.id, {
       method: "PUT",
       body: JSON.stringify(confere),
       headers: {
@@ -110,7 +109,8 @@ function Formcursos() {
               <option value="Go">Go - Presencial</option>
             </select>
           </div>
-          <Button buttonStyle={'btn--outline'}>Enviar</Button>
+
+          <input type="submit" value="Enviar"></input> 
           
         </form>
 
