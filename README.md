@@ -61,7 +61,7 @@ Invista no futuro! Começando com a introdução aos fundamentos do idioma, voca
 <h1 align="center">🕹️Nossos Devs🕹️</h1>
 <div align="center">
   
-![image](images/squad-json.jpg)
+![image](language-plus/public/images/squad-json.jpg)
   
 [--Bruna Lima--](https://github.com/brwnalima) [--Ester Ramos--](https://github.com/EsterM99) [--Suanny Rodrigues--](https://github.com/suannyrodrigues) [--Raquel Sacramento--](https://github.com/devRaquel) [--Raísha Tinoco--](https://github.com/RayTdC).
 
