@@ -58,7 +58,7 @@ Invista no futuro! Começando com a introdução aos fundamentos do idioma, voca
 
 
 
-<h1 align="center">🕹️Nossos Devs🕹️</h1>
+<h1 align="center">🕹️Nossas Devs🕹️</h1>
 <div align="center">
   
 ![image](language-plus/public/images/squad-json.jpg)
