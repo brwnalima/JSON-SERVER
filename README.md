@@ -58,6 +58,16 @@ Invista no futuro! Começando com a introdução aos fundamentos do idioma, voca
 
 
 
+<h1 align="center">🕹️Nossos Devs🕹️</h1>
+<div align="center">
+  
+![image](img/squad-json.jpg)
+  
+[--Bruna Lima--](https://github.com/brwnalima) [--Ester Ramos--](https://github.com/EsterM99) [--Suanny Rodrigues--](https://github.com/suannyrodrigues) [--Raquel Sacramento--](https://github.com/devRaquel) [--Raísha Tinoco--](https://github.com/RayTdC)
+
+
+
+
 <h3 align="center">Ferramentas utilizadas:</h3>
 
 <div style="display: inline_block" align = "center"><br>
