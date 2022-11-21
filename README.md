@@ -63,7 +63,7 @@ Invista no futuro! Começando com a introdução aos fundamentos do idioma, voca
   
 ![image](img/squad-json.jpg)
   
-[--Bruna Lima--](https://github.com/brwnalima) [--Ester Ramos--](https://github.com/EsterM99) [--Suanny Rodrigues--](https://github.com/suannyrodrigues) [--Raquel Sacramento--](https://github.com/devRaquel) [--Raísha Tinoco--](https://github.com/RayTdC)
+[--Bruna Lima--](https://github.com/brwnalima) [--Ester Ramos--](https://github.com/EsterM99) [--Suanny Rodrigues--](https://github.com/suannyrodrigues) [--Raquel Sacramento--](https://github.com/devRaquel) [--Raísha Tinoco--](https://github.com/RayTdC).
 
 
 
