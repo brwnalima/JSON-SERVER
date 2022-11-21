@@ -1,13 +1,128 @@
-.Sobrenos{
-    display: flex;
-    width: 40%;
-    margin: 2em auto;
-    background: linear-gradient(90deg, #000000 0%, #180A29 100%);
-    border-radius: 5px ;
-    color: #fff;
-    box-shadow: 0 0 10px #14072649;
+
+.promotion-teens {
+    padding: 100px 0;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+}
+div {
+    display: block;
 }
 
-.header-sobrenos{
-    display:flex;
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.col-12col-lg-4col-xl-3{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.promotion-teens__image.bg {
+    background-image: url(https://img.freepik.com/vetores-premium/alunos-minusculos-estudando-com-livros-e-lapis-pessoas-treinando-a-mente-perto-da-cabeca-abstrata-com-ilustracao-vetorial-plana-de-cubos-educacao-conceito-de-conhecimento-para-banner-design-do-site-ou-pagina-inicial-da-web_179970-6692.jpg);
+}
+
+.promotion-teens__image {
+    height: 426px;
+    width: 626px;
+    position: relative;
+    left: 460px;
+    top: 30px;
+    display: block;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.title {
+    position: relative;
+    left: 170px;
+    bottom: 455px;
+    color: #000000;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 34px;
+    margin: 0 0 10px;
+    padding: 0;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.description {
+    color: #000000;
+    font-size: 14px;
+    line-height: 24px;
+    display: block;
+    margin: 0 0 0px;
+    padding: 0;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    width: 1500px;
+    overflow-wrap: break-all;
+    word-wrap: break-all;
+    word-break: break-all;
+    position: relative;
+    left: 50px;
+   
+}
+
+.button {
+    width: 260px;
+}
+
+.button--purple-22:hover {
+    background: #E22347;
+    border: 1px solid #E22347;
+    color: #fff;
+}
+
+.button {
+    height: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 50px;
+    letter-spacing: 2px;
+    color: #fff;
+    background: #674198;
+    border-color: #674198;
+    border-radius: 4px;
+    padding: 0 15px;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    position: relative;
+    left: 600px;
+    top: 30px;
+}
+
