@@ -97,7 +97,10 @@ function Formcadastro() {
     window.location = "/cursos"
   }
 
+  // VALIDANDO CPF
 
+  // CPF
+  
   return (
     <Bounce>
       <div className="Formcadastro">
@@ -131,7 +134,7 @@ function Formcadastro() {
               <label htmlFor='senha'>Senha</label>
               <input type="password" name="senha" placeholder="Ex.99999999" onChange={(e) => setSenha(e.target.value)} value={senha || ""} required />
             </div>
-            <input type="submit" value="Começar"/>
+            <input type="submit" value="Começar" />
           </form>
         </div>
         <div className='list-meusdados'>
