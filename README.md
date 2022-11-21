@@ -41,6 +41,16 @@ Veja abaixo, como foi estruturada a API com dados mokados:
     }
 ```
 
+<h1  align="center">🌐Nossa página🌐</h1>
+
+<div align="center">
+  
+  ![image](language-plus/public/images/Home.PNG)
+
+
+
+
+
 <h1  align="center">🤔Quem somos?🤔</h1>
 <p align="center">Os cursos de idiomas da Language Plus são focados no seu objetivo!
 
