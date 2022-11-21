@@ -11,7 +11,7 @@ function Cards() {
 
         <div className='cards'>
             <Slide cascade damping={0.1}>
-                <h1>Os cursos de idiomas da Language Plus são focados no seu objetivo!</h1>
+                <h1>Os cursos de idiomas da Language Plus são focados em seu objetivo!</h1>
             </Slide>
             <Slide cascade damping={0.1}>
                 <div className='cards__container'>

@@ -10,11 +10,11 @@ function Footer() {
 
             <section className="footer-subscription">
                 <p className="footer-subscription-heading">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Seja +! Seja o que você quer ser! 
                 </p>
 
                 <p className="footer-subscription-text">
-                    Lorem ipsum dolor sit amet consectet.
+                    Inscreva-se agora e fique por dentro de tudo!
                 </p>
 
                 <div className="input-areas">

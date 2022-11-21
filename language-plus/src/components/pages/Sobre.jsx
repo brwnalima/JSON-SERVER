@@ -1,13 +1,13 @@
 import React from 'react'
 import '../../App.css'
 import Footer from '../footer/Footer'
-
+import Sobrenos from '../conteudo/sobrenos'
 export default function Sobre() {
   return (
-    <>
-      <h1 className="sobrenos">SOBRE NÓS</h1>
+    <div>
+      <Sobrenos />
       <Footer />
-    </>
+    </div>
   )
 
 }
