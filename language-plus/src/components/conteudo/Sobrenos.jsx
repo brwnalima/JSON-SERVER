@@ -7,6 +7,7 @@ export default function Sobrenos() {
        <div className="header-sobrenos">
        <h1>Você sonha,</h1>
        <h1>A gente realiza.</h1>
+       <img src=""></img>
        </div>
        <div className="conteudo">
         <h2>Um experiência única para você aprender um novo idioma</h2>
