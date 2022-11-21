@@ -50,7 +50,7 @@
     
 }
 
-input[type="submit"]{
+input[type="submit"], input[type="button"]{
     background-color: transparent;
     color: #fff!important;
     padding: 8px 20px;
@@ -62,7 +62,7 @@ input[type="submit"]{
     cursor: pointer;
 }
 
-input[type="submit"]:hover {
+input[type="submit"]:hover, input[type="button"]:hover {
     transition: all 0.3s ease-out;
     background: #fff;
     color: #242424!important;
