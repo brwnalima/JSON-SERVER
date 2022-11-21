@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react'
 import { BsTrash, BsBookmarkCheck, BsBookmarkCheckFill } from "react-icons/bs"
-import { Button } from '../button/Button';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './Formcadastro.css'
 
-const API = "https://language-plus.onrender.com/";         //Endereço da API/json-sever//
+const API = "https://language-plus.onrender.com";         //Endereço da API/json-sever//
 
 function Formcadastro() {
 
@@ -22,7 +22,7 @@ function Formcadastro() {
     const loadData = async () => {  //Esta função carrega os dados que serão setados pelos métodos.//
       setLoading(true);
 
-      const res = await fetch(API + "/curso")
+      const res = await fetch(API + "/cadastro")
         .then((res) => res.json())    //Espera uma resposta e transforma em json.//
         .then((data) => data)        //Retorna os dados//
         .catch((err) => console.log(err));
@@ -50,7 +50,7 @@ function Formcadastro() {
       done: false,
     };
 
-    await fetch(API + "/curso", {
+    await fetch(API + "/cadastro", {
       method: "POST",
       body: JSON.stringify(confere),
       headers: {
@@ -72,7 +72,7 @@ function Formcadastro() {
 
   const handleDelete = async (id) => {
 
-    await fetch(API + "/curso/" + id, {
+    await fetch(API + "/cadastro/" + id, {
       method: "DELETE",
     });
 
@@ -82,7 +82,7 @@ function Formcadastro() {
   const handleEdit = async (confere) => {
     confere.done = !confere.done;
 
-    const data = await fetch(API + "/curso/" + confere.id, {
+    const data = await fetch(API + "/cadastro/" + confere.id, {
       method: "PUT",
       body: JSON.stringify(confere),
       headers: {
@@ -91,6 +91,10 @@ function Formcadastro() {
     });
 
     setConfere((prevState) => prevState.map((t) => (t.id === data.id) ? (t = data) : t));
+  }
+
+  const handleConfirm = () => {
+    window.location = "/cursos"
   }
 
 
@@ -127,7 +131,7 @@ function Formcadastro() {
             <input type="password" name="senha" placeholder="Ex.99999999" onChange={(e) => setSenha(e.target.value)} value={senha || ""} required />
           </div>
 
-          <input type="submit" value="Começar" />
+          <input type="submit" value="Começar"/>
         </form>
 
       </div>
@@ -148,7 +152,8 @@ function Formcadastro() {
                 {!meusdados.done ? <BsBookmarkCheck /> : <BsBookmarkCheckFill />}
               </span>
               <BsTrash onClick={() => handleDelete(meusdados.id)} />
-              <input type="submit" value="Confirmar"></input>
+
+              <input type='button' value="Confirmar" onClick={handleConfirm}></input>
             </div>
           </div> //Condicional para confirmação de opção listada//
         ))}

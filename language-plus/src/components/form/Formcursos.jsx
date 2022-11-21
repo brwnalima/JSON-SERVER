@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react'
 import { BsTrash, BsBookmarkCheck, BsBookmarkCheckFill } from "react-icons/bs"
+
 import './Formcursos.css'
 
-const API = "https://language-plus.onrender.com/"; //Endereço da API/json-sever//
+const API = "https://language-plus.onrender.com"; //Endereço da API/json-sever//
 
 function Formcursos() {
 
@@ -17,7 +18,7 @@ function Formcursos() {
     const loadData = async () => {  //Esta função carrega os dados que serão testados pelos métodos.//
       setLoading(true);
 
-      const res = await fetch(API + "/disciplinas")
+      const res = await fetch(API + "/cursos")
         .then((res) => res.json())   //Espera uma resposta e transforma em json.//
         .then((data) => data)       //Retorna os dados//
         .catch((err) => console.log(err));
@@ -39,12 +40,12 @@ function Formcursos() {
 
     const confere = {
       id: Math.random(),
-      disciplina,
+      curso,
       modalidade,
       done: false,
     };
 
-    await fetch(API + "/disciplinas", {
+    await fetch(API + "/cursos", {
       method: "POST",
       body: JSON.stringify(confere),
       headers: {
@@ -62,7 +63,7 @@ function Formcursos() {
 
   const handleDelete = async (id) => {
 
-    await fetch(API + "/disciplinas/" + id, {
+    await fetch(API + "/cursos/" + id, {
       method: "DELETE",
     });
 
@@ -72,7 +73,7 @@ function Formcursos() {
   const handleEdit = async (confere) => {
     confere.done = !confere.done;
 
-    const data = await fetch(API + "/disciplinas/" + confere.id, {
+    const data = await fetch(API + "/cursos/" + confere.id, {
       method: "PUT",
       body: JSON.stringify(confere),
       headers: {
@@ -83,7 +84,7 @@ function Formcursos() {
     setConfere((prevState) => prevState.map((t) => (t.id === data.id) ? (t = data) : t));
   }
 
-  const seletor = document.getElementsByClassName("select")
+  const seletor = document.querySelector("#select")
 
   return (
     <div className="Formcursos">
@@ -101,14 +102,7 @@ function Formcursos() {
             <label htmlFor='modalidade'>Modalidade</label>
             <input type="text" name="modalidade" placeholder="Ex. Live Class" onChange={(e) => setModalidade(e.target.value)} value={modalidade || ""} required />
           </div>
-          <div className='form-control'>
-            <label htmlFor='modalidade'>Modalidade</label>
-            <select>
-              <option value="0" selected="seleted" disabled="disabled">Selecione</option>
-              <option value="LiveClass">Live Class - Remoto</option>
-              <option value="Go">Go - Presencial</option>
-            </select>
-          </div>
+          
 
           <input type="submit" value="Enviar"></input> 
           
@@ -122,7 +116,7 @@ function Formcursos() {
           <div className='meucurso' key={meucurso.id}>
             <h3 className={meucurso.done ? "meucurso.done" : ""}>Curso: {meucurso.curso}</h3>
             <p>Modalidade: {meucurso.modalidade}</p>
-            <p>Modalidade: {seletor.value = "LiveClass" ? "Live Classbruna" : "Go"} {/* MEXER NISSO AMANHÃ */}</p>
+            <p>Esperamos por você.</p>
             <div className='actions'>
               <span onClick={() => handleEdit(meucurso)}>
                 {!meucurso.done ? <BsBookmarkCheck /> : <BsBookmarkCheckFill />}
