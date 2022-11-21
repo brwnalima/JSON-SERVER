@@ -1,5 +1,9 @@
 import { useState, useEffect } from 'react'
 import { BsTrash, BsBookmarkCheck, BsBookmarkCheckFill } from "react-icons/bs"
+import CardItem from '../cards/CardItem'
+import { Slide } from "react-awesome-reveal"
+import { Bounce } from "react-awesome-reveal"
+
 
 import './Formcursos.css'
 
@@ -87,45 +91,48 @@ function Formcursos() {
   const seletor = document.querySelector("#select")
 
   return (
-    <div className="Formcursos">
-      <div className='header-meucurso'>
-        <h1>Agora é com você!</h1>
-      </div>
-      <div className='form-meucurso'>
-        <h2>Meus cursos</h2>
-        <form onSubmit={handleSubmit}>
-          <div className='form-control'>
-            <label htmlFor='curso'>O que você vai estudar?</label>
-            <input type="text" name="curso" placeholder="Ex. Inglês" onChange={(e) => setCurso(e.target.value)} value={curso || ""} required />
-          </div>
-          <div className='form-control'>
-            <label htmlFor='modalidade'>Modalidade</label>
-            <input type="text" name="modalidade" placeholder="Ex. Live Class" onChange={(e) => setModalidade(e.target.value)} value={modalidade || ""} required />
-          </div>
-          
 
-          <input type="submit" value="Enviar"></input> 
-          
-        </form>
+    <div>
+      
+      <Bounce>
+        <div className="Formcursos">
+          <div className='header-meucurso'>
+            <h1>Agora é com você!</h1>
+          </div>
+          <div className='form-meucurso'>
+            <h2>Meus cursos</h2>
+            <form onSubmit={handleSubmit}>
+              <div className='form-control'>
+                <label htmlFor='curso'>O que você vai estudar?</label>
+                <input type="text" name="curso" placeholder="Ex. Inglês" onChange={(e) => setCurso(e.target.value)} value={curso || ""} required />
+              </div>
+              <div className='form-control'>
+                <label htmlFor='modalidade'>Modalidade</label>
+                <input type="text" name="modalidade" placeholder="Ex. Live Class" onChange={(e) => setModalidade(e.target.value)} value={modalidade || ""} required />
+              </div>
+              <input type="submit" value="Enviar"></input>
+            </form>
+          </div>
+          <div className='list-meucurso'>
+            <h2>Cursos selecionados:</h2>
+            {confere.length === 0 && <p>Sem planos de estudo!</p>}
+            {confere.map((meucurso) => (                             //Listagem/Exibição/Atualização dos cursos escolhidos(para o usuário)//
+              <div className='meucurso' key={meucurso.id}>
+                <h3 className={meucurso.done ? "meucurso.done" : ""}>Curso: {meucurso.curso}</h3>
+                <p>Modalidade: {meucurso.modalidade}</p>
+                <p>Esperamos por você.</p>
+                <div className='actions'>
+                  <span onClick={() => handleEdit(meucurso)}>
+                    {!meucurso.done ? <BsBookmarkCheck /> : <BsBookmarkCheckFill />}
+                  </span>
+                  <BsTrash onClick={() => handleDelete(meucurso.id)} />
+                </div>
+              </div>                                               //Condicional para confirmação de opção listada//
+            ))}
+          </div>
+        </div>
+      </Bounce>
 
-      </div>
-      <div className='list-meucurso'>
-        <h2>Cursos selecionados:</h2>
-        {confere.length === 0 && <p>Sem planos de estudo!</p>}
-        {confere.map((meucurso) => (                             //Listagem/Exibição/Atualização dos cursos escolhidos(para o usuário)//
-          <div className='meucurso' key={meucurso.id}>
-            <h3 className={meucurso.done ? "meucurso.done" : ""}>Curso: {meucurso.curso}</h3>
-            <p>Modalidade: {meucurso.modalidade}</p>
-            <p>Esperamos por você.</p>
-            <div className='actions'>
-              <span onClick={() => handleEdit(meucurso)}>
-                {!meucurso.done ? <BsBookmarkCheck /> : <BsBookmarkCheckFill />}
-              </span>
-              <BsTrash onClick={() => handleDelete(meucurso.id)} />
-            </div>
-          </div>                                               //Condicional para confirmação de opção listada//                      
-        ))}
-      </div>
     </div>
   )
 }
