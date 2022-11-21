@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { BsTrash, BsBookmarkCheck, BsBookmarkCheckFill } from "react-icons/bs"
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './Formcadastro.css'
+import { Bounce } from "react-awesome-reveal"
 
 const API = "https://language-plus.onrender.com";         //Endereço da API/json-sever//
 
@@ -99,66 +99,65 @@ function Formcadastro() {
 
 
   return (
-    <div className="Formcadastro">
-      <div className='header-meusdados'>
-        <h1>Crie sua conta</h1>
-      </div>
-      <div className='form-meusdados'>
-        <form onSubmit={handleSubmit}>
-          <div className='form-control'>
-            <label htmlFor='cadastro'>Nome completo:</label>
-            <input type="text" name="cadastro" placeholder="Ex. André Bastos" onChange={(e) => setNome(e.target.value)} value={nome || ""} required />
-          </div>
-          <div className='form-control'>
-            <label htmlFor='cpf'>Digite seu CPF</label>
-            <input type="number" name="cpf" placeholder="Ex.12345678910" onChange={(e) => setCpf(e.target.value)} value={cpf || ""} required />
-            {/* VER SITE: https://dev.to/elisangelamsilva/validacao-e-formatacao-de-campos-e-dados-com-html-e-javascript-3l9g */}
-          </div>
-          <div className='form-control'>
-            <label htmlFor='email'>Email</label>
-            <input type="email" name="email" placeholder="Ex.abc@gmail.com" onChange={(e) => setEmail(e.target.value)} value={email || ""} required />
-          </div>
-          <div className='form-control'>
-            <label htmlFor='tel'>Telefone</label>
-            <input type="tel" name="tel" placeholder="Ex.99999999" onChange={(e) => setTel(e.target.value)} value={tel || ""} required />
-          </div>
-          <div className='form-control'>
-            <label htmlFor='login'>Login</label>
-            <input type="text" name="login" placeholder="Ex.André" onChange={(e) => setLogin(e.target.value)} value={login || ""} required />
-          </div>
-          <div className='form-control'>
-            <label htmlFor='senha'>Senha</label>
-            <input type="password" name="senha" placeholder="Ex.99999999" onChange={(e) => setSenha(e.target.value)} value={senha || ""} required />
-          </div>
-
-          <input type="submit" value="Começar"/>
-        </form>
-
-      </div>
-      <div className='list-meusdados'>
-        <h2>Minha conta</h2>
-        {confere.length === 0 && <p>Sem cadastro!</p>}
-        {confere.map((meusdados) => (  //Listagem/Exibição/Atualização dos dados do usuário//
-          <div className='meusdados' key={meusdados.id}>
-            <h3 className={meusdados.done ? "meusdados.done" : ""}>Seus dados estão corretos?</h3>
-            <p>Nome completo:  {meusdados.nome}</p>
-            <p>CPF: {meusdados.cpf}</p>
-            <p>Email: {meusdados.email}</p>
-            <p>Telefone: {meusdados.tel}</p>
-            <p>Login: {meusdados.login}</p>
-            <p>Senha: {meusdados.senha}</p>
-            <div className='actions'>
-              <span onClick={() => handleEdit(meusdados)}>
-                {!meusdados.done ? <BsBookmarkCheck /> : <BsBookmarkCheckFill />}
-              </span>
-              <BsTrash onClick={() => handleDelete(meusdados.id)} />
-
-              <input type='button' value="Confirmar" onClick={handleConfirm}></input>
+    <Bounce>
+      <div className="Formcadastro">
+        <div className='header-meusdados'>
+          <h1>Crie sua conta</h1>
+        </div>
+        <div className='form-meusdados'>
+          <form onSubmit={handleSubmit}>
+            <div className='form-control'>
+              <label htmlFor='cadastro'>Nome completo:</label>
+              <input type="text" name="cadastro" placeholder="Ex. André Bastos" onChange={(e) => setNome(e.target.value)} value={nome || ""} required />
             </div>
-          </div> //Condicional para confirmação de opção listada//
-        ))}
+            <div className='form-control'>
+              <label htmlFor='cpf'>Digite seu CPF</label>
+              <input type="number" name="cpf" placeholder="Ex.12345678910" onChange={(e) => setCpf(e.target.value)} value={cpf || ""} required />
+              {/* VER SITE: https://dev.to/elisangelamsilva/validacao-e-formatacao-de-campos-e-dados-com-html-e-javascript-3l9g */}
+            </div>
+            <div className='form-control'>
+              <label htmlFor='email'>Email</label>
+              <input type="email" name="email" placeholder="Ex.abc@gmail.com" onChange={(e) => setEmail(e.target.value)} value={email || ""} required />
+            </div>
+            <div className='form-control'>
+              <label htmlFor='tel'>Telefone</label>
+              <input type="tel" name="tel" placeholder="Ex.99999999" onChange={(e) => setTel(e.target.value)} value={tel || ""} required />
+            </div>
+            <div className='form-control'>
+              <label htmlFor='login'>Login</label>
+              <input type="text" name="login" placeholder="Ex.André" onChange={(e) => setLogin(e.target.value)} value={login || ""} required />
+            </div>
+            <div className='form-control'>
+              <label htmlFor='senha'>Senha</label>
+              <input type="password" name="senha" placeholder="Ex.99999999" onChange={(e) => setSenha(e.target.value)} value={senha || ""} required />
+            </div>
+            <input type="submit" value="Começar"/>
+          </form>
+        </div>
+        <div className='list-meusdados'>
+          <h2>Minha conta</h2>
+          {confere.length === 0 && <p>Sem cadastro!</p>}
+          {confere.map((meusdados) => (  //Listagem/Exibição/Atualização dos dados do usuário//
+            <div className='meusdados' key={meusdados.id}>
+              <h3 className={meusdados.done ? "meusdados.done" : ""}>Seus dados estão corretos?</h3>
+              <p>Nome completo:  {meusdados.nome}</p>
+              <p>CPF: {meusdados.cpf}</p>
+              <p>Email: {meusdados.email}</p>
+              <p>Telefone: {meusdados.tel}</p>
+              <p>Login: {meusdados.login}</p>
+              <p>Senha: {meusdados.senha}</p>
+              <div className='actions'>
+                <span onClick={() => handleEdit(meusdados)}>
+                  {!meusdados.done ? <BsBookmarkCheck /> : <BsBookmarkCheckFill />}
+                </span>
+                <BsTrash onClick={() => handleDelete(meusdados.id)} />
+                <input type='button' value="Confirmar" onClick={handleConfirm}></input>
+              </div>
+            </div> //Condicional para confirmação de opção listada//
+          ))}
+        </div>
       </div>
-    </div>
+    </Bounce>
   )
 }
 
