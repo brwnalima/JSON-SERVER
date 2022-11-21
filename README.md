@@ -41,7 +41,7 @@ Veja abaixo, como foi estruturada a API com dados mokados:
     }
 ```
 
-<h1>🤔Quem somos?🤔</h1>
+<h1  align="center">🤔Quem somos?🤔</h1>
 <p align="center">Os cursos de idiomas da Language Plus são focados no seu objetivo!
 
 Viagens
