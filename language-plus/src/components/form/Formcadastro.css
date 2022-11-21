@@ -108,23 +108,75 @@ input[type="submit"] {
     color: black;
 }
 
-@media screen and (max-width: 1200px) { 
+
+@media screen and (max-width: 1440px) {
+
     .Formcadastro {
-        width: 60%;
-        transition: 1s ease-in-out;
+        width: 40%;
+        transition: 0.7s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 1360px) {
+
+    .Formcadastro {
+        width: 45%;
+        transition: 0.7s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .Formcadastro {
+        width: 55%;
+        transition: 0.7s ease-in-out;
     }
 }
 
 @media screen and (max-width: 960px) {
+
     .Formcadastro {
         width: 60%;
-        transition: 1s ease-in-out;
+        transition: 0.7s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 880px) {
+
+    .Formcadastro {
+        width: 60%;
+        transition: 0.7s ease-in-out;
     }
 }
 
 @media screen and (max-width: 768px) {
+
     .Formcadastro {
-        width: 80%;
-        transition: 1s ease-in-out;
+        width: 70%;
+        transition: 0.7s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 690px) {
+
+    .Formcadastro {
+        width: 75%;
+        transition: 0.7s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .Formcadastro {
+        width: 90%;
+        transition: 0.7s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .Formcadastro {
+        width: 96%;
+        transition: 0.7s ease-in-out;
     }
 }
