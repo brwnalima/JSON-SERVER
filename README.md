@@ -41,6 +41,23 @@ Veja abaixo, como foi estruturada a API com dados mokados:
     }
 ```
 
+<h1>🤔Quem somos?🤔</h1>
+<p align="center">Os cursos de idiomas da Language Plus são focados no seu objetivo!
+
+Viagens
+
+Se o seu desejo é viajar, conheça os lugares para onde pretende ir, aprenda sobre os pontos turísticos, vocabulário local, sobre transportes e hospedagem. Sinta-se seguro para estar em um novo lugar e aprender ainda mais sobre outras culturas!
+
+Negócios & Tecnologia
+
+Se o seu objetivo é melhorar o seu currículo e crescer na sua carreira, aprenda um novo idioma focando no seu desempenho profissional. Ter uma comunicação clara em um ambiente de negócios, desde o atendimento de ligações a respostas de e-mails, bem como na criação de relatórios e rotinas administrativas, saber uma língua estrangeira é fundamental para quem almeja uma carreira internacional ou trabalhar em uma empresa multinacional. Se você é um programador e precisa enriquecer seu vocabulário de inglês para programação, estudar conosco é opção perfeita para você. No nosso curso você aprenderá o vocabulário de forma prática e divertida para desenvolver e se desenvolver cada vez melhor!
+
+Kids
+
+Invista no futuro! Começando com a introdução aos fundamentos do idioma, vocabulários básicos e conversação do dia a dia, temas comuns como escola e esportes, expressões e frases simples, apresente sua criança a um mundo novo cheio de oportunidades! Com o avanço do curso seu(a) filho(a) aperfeiçoará ainda mais a pronúncia e sua autoconfiança!</p>
+
+
+
 <h3 align="center">Ferramentas utilizadas:</h3>
 
 <div style="display: inline_block" align = "center"><br>
