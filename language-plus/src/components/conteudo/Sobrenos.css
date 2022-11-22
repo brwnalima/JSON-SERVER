@@ -1,9 +1,9 @@
 #tudo {
-    
+
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-      'Lucida Sans', Arial, sans-serif!important;
-      margin-top: 60px;
+        'Lucida Sans', Arial, sans-serif !important;
+    margin-top: 60px;
 }
 
 
@@ -11,7 +11,7 @@
     display: inline-flex;
     align-content: center;
     padding: 70px;
-    
+
 }
 
 .conteiner-textos div {
@@ -33,7 +33,7 @@
 .conteiner-textos p {
     width: 90%;
     font-size: 40px;
-    text-align: justify!important;
+    text-align: justify !important;
     font-size: 16px;
     margin-top: 20px !important;
     margin-bottom: 90px !important;
@@ -49,30 +49,89 @@
 
 @media screen and (max-width: 1864px) {
 
+    .conteudo {
+        width: 100%;
+    }
+
     .conteiner-textos {
         display: inline-flex;
     }
 
-    .row {
-        width: 90%;
+    .titulo h1 {
+        font-size: 40px;
     }
 
-    .text {
-        width: 1200px;
-        margin: auto;
+    .titulo h4 {
+        margin-top: 15px;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+
+    #tudo {
+
+        text-align: center;
+        
+    }
+
+    .conteiner-textos {
+        display: inline-flex;
+        width: 100%;
+    }
+
+    .titulo h1 {
+        font-size: 30px;
+        
+    }
+
+    .titulo h4 {
+        margin-top: 15px;
+        font-size: 16px;
+        
+    }
+}
+
+@media screen and (max-width: 860px) {
+
+    #tudo {
+
+        text-align: center;
+        
+    }
+
+    .conteiner-textos {
+        display: flexbox;
+        align-content: center!important;
+    }
+
+    .titulo h1 {
+        font-size: 27px;
+        
+    }
+
+    .titulo h4 {
+        margin-top: 15px;
+        font-size: 16px;
+        
     }
 }
 
 @media screen and (max-width: 500px) {
+
+    .conteudo {
+        width: 100%;
+    }
+
     .conteiner-textos {
         display: block;
     }
 
-    .titulo h1{
+    .titulo h1 {
         font-size: 20px;
     }
 
-    .titulo h4{
+    .titulo h4 {
         margin-top: 15px;
         font-size: 16px;
     }
