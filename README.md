@@ -1,44 +1,35 @@
-# JSON-SERVER
+# Language Plus+ 
  
-### [Language Plus+](https://languageplus.onrender.com/) - Escola/Curso de Idiomas
+### Escola/Curso de Idiomas
 
-Projeto individual, referente ao módulo 3, do curso de <strong>Desenvolvedor Web Full Stack</strong> do Resilia Educação, em parceria com o SENAC RJ.
+Projeto em squad, referente ao módulo 3, do curso de <strong>Desenvolvedor Web Full Stack</strong> do Resilia Educação, em parceria com o SENAC RJ.
 
-O trabalho abaixo tem como o intuito estabelecer uma API REST utilizando JSON SERVER e explorando os protocólos de métodos HTTP. O repositório, trata-se dos dados de uma plataforma onde o usuário poderá contratar ou se inscrever em aulas/turmas de diversos idiomas. Além disso, o curso é direcionado para vários níveis - iniciante, avançado, empresarial/profissional e etc. Isso dá mais autonomia e variedade ao usuário e ele poderá escolhar qual nível e idioma deseja estudar! 
+O trabalho abaixo tem como o intuito estabelecer uma API REST utilizando JSON SERVER e explorando os protocólos de métodos HTTP. O repositório, trata-se dos dados de uma plataforma onde o usuário poderá contratar ou se inscrever em aulas/turmas de diversos idiomas. Além disso, nossa plataforma possui cursos direcionados para vários níveis - iniciante, avançado, empresarial/profissional e etc. Isso dá mais autonomia e variedade ao usuário e ele poderá escolhar qual nível e idioma deseja estudar! 
 
-O projeto foi intitulado [Language Plus+](https://languageplus.onrender.com/) - ele possui três rotas (<strong>disciplinas, professores & turmas</strong>), com, no mínimo, 4 atributos cada, e o repositório foi hospedado no site [Render](https://dashboard.render.com/). 
+Para visualizá-lo, siga os passos abaixo:
 
-
-### Rotas e dados:
-
-Veja abaixo, como foi estruturada a API com dados mokados:
+## Clone este repositório através do GIT:
 
 ```sh
-# "disciplinas": [
-    {
-      "carga horária": "300h",
-      "nome": "francês",
-      "nível": "avançado",
-      "curso": "remoto",
-      "id": 1
-    }
+$ git clone https://github.com/brwnalima/JSON-SERVER
+```
 
-# "professores": [
-    {
-      "id": 1,
-      "nome": "Laís Lúcia Luiza da Rosa",
-      "cpf": "936.305.957-07",
-      "email": "lais_lucia_darosa@jerasistemas.com.br",
-      "telefone": "5511988888888"
-    }
+## Abra seu terminal ou prompt de comando, e instale o [ViteJS](https://vitejs.dev/) com o código abaixo:
 
-# "turmas": [
-    {
-      "id": 1,
-      "classificação": "C1",
-      "disciplinaId": "1",
-      "turno": "manhã"
-    }
+```sh
+npm install
+```
+
+## Abra o repositório pelo terminal/prompt de comando
+
+```sh
+cd language-plus
+```
+
+## Inicie o projeto
+
+```sh
+npm run dev
 ```
 
 <h1  align="center">🌐Nossa página🌐</h1>
@@ -89,3 +80,4 @@ Invista no futuro! Começando com a introdução aos fundamentos do idioma, voca
   <img align="center" alt="Bruna VsCode " height="40" width="40" src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_vscode_icon_130084.png" />
             
 </div>
+
