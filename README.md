@@ -32,6 +32,9 @@ npm install
 npm run dev
 ```
 
+#### Caso não funcione, é necessário baixar as bibliotecas necessárias
+
+
 <h1  align="center">Nossa página</h1>
 
 <div align="center">
