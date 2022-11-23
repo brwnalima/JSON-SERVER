@@ -32,7 +32,7 @@ npm install
 npm run dev
 ```
 
-<h1  align="center">🌐Nossa página🌐</h1>
+<h1  align="center">Nossa página</h1>
 
 <div align="center">
   
@@ -42,7 +42,7 @@ npm run dev
 
 
 
-<h1  align="center">🤔Quem somos?🤔</h1>
+<h1  align="center">Quem somos?</h1>
 <p align="center">Os cursos de idiomas da Language Plus são focados no seu objetivo!
 
 Viagens
@@ -59,7 +59,7 @@ Invista no futuro! Começando com a introdução aos fundamentos do idioma, voca
 
 
 
-<h1 align="center">🕹️Nossas Devs🕹️</h1>
+<h1 align="center">Nossas Devs</h1>
 <div align="center">
   
 ![image](language-plus/public/images/squad-json.jpg)
