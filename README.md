@@ -17,13 +17,13 @@ $ git clone https://github.com/brwnalima/JSON-SERVER
 ## Abra seu terminal ou prompt de comando, e instale o [ViteJS](https://vitejs.dev/) com o código abaixo:
 
 ```sh
-npm install
+cd language-plus
 ```
 
 ## Abra o repositório pelo terminal/prompt de comando
 
 ```sh
-cd language-plus
+npm install
 ```
 
 ## Inicie o projeto
