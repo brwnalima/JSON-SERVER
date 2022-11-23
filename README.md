@@ -14,13 +14,13 @@ Para visualizá-lo, siga os passos abaixo:
 $ git clone https://github.com/brwnalima/JSON-SERVER
 ```
 
-## Abra seu terminal ou prompt de comando, e instale o [ViteJS](https://vitejs.dev/) com o código abaixo:
+## Abra seu terminal ou prompt de comando, e use o código abaixo no repositório do projeto:
 
 ```sh
 cd language-plus
 ```
 
-## Abra o repositório pelo terminal/prompt de comando
+## Instale o [ViteJS](https://vitejs.dev/) com o código abaixo:
 
 ```sh
 npm install
