@@ -1,5 +1,5 @@
 import React from "react"
-import '../conteudo/Sobrenos.css'
+import './Sobrenos.css'
 
 function Sobrenos() {
     return (
