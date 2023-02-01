@@ -1,7 +1,7 @@
 import React from 'react'
 import './Cards.css'
 import CardItem from './CardItem';
-import { Slide } from "react-awesome-reveal"
+import { Slide } from "'react-awesome-reveal'"
 
 
 
